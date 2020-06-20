@@ -1,0 +1,153 @@
+@font-face {
+	font-family: "Emblema One";
+	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), 
+	     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"); 
+}
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       middle;
+  background-color: #F5F5F5;
+  margin:           0px;
+}
+h1, h2 {
+  color:           #00bfff;
+  border-bottom:   thin dotted #888888;
+}
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+h2 {
+  font-size:       130%;
+  font-weight:     normal;
+}
+blockquote {
+  font-style:      italic;
+}
+
+
+table {
+  margin:           0 auto;
+  border:           thin solid black;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+
+table table th {
+  background-color: white; 
+}
+
+td, th {
+  border:           thin dotted gray;
+  padding:          5px;
+}
+
+th {
+  background-color: #00bfff;
+}
+
+
+.cellcolor {
+  background-color: #e0ffff;
+}
+
+
+
+caption {
+  font-style:       italic;
+  padding-top:      8px;
+}
+
+.center {
+  text-align:       center;
+}
+
+.right {
+  text-align:       right;
+}
+
+ol li {
+  /* list-style-image: url(images/backpack.gif); */
+  padding-top:      5px;
+  margin-left:      10px;
+}
+
+header.top {
+  background-color: #000000;
+  margin: 10px 10px 0px 10px;
+  height:           108px;
+}
+
+header.top img#headerSymbol {
+	float: right;
+}
+
+nav {
+    background-color: #C0C0C0;
+	margin: 10px 10px 0px 10px;
+}
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+nav ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+
+div#tableContainer {
+	display: table;
+	border-spacing: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div#tableRow {
+	display: table-row;
+}
+
+#diary1 img fangyi{
+	float: left;
+}
+
+
+footer {
+  background-color: #C0C0C0;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  font-size:        90%;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+
+	/* optional! very hard to see although does help */
+	text-shadow: 1px 1px 3px #e2c2c2; 
+
+	/* try this and see if you like it */
+	text-transform: uppercase;
+}
+
+li.selected {
+	background-color: #4682B4;
+}
+
+article span {
+	font-style: italic;
+}

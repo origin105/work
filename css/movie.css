@@ -1,0 +1,143 @@
+body { 
+  background-color: #7B7B7B;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        middle;
+  margin:           0px;
+}
+
+/* 
+	height messes up the headers in the blog in the articles
+	it's only appropriate for the top header.
+	add a class (new with blog)
+	Affects the 3 #header rules for the main header below
+	In HTML: add class="top" to main header in index.html and blog.html
+*/
+
+header.top {
+  background-color: #000000;
+  margin: 10px 10px 0px 10px;
+  height:           108px;
+}
+
+header.top img#headerSymbol {
+	float: right;
+}
+
+
+/* nav new in blog */
+
+div#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+div#tableRow {
+	display: table-row;
+}
+
+section#introduce {
+    display: table-cell;
+    background: url(../images/background4.jpg) top left;
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* added section#blog for blog */
+section#main, section#blog {
+  display: table-cell;
+  background:       url(../images/background2.jpg) top left;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+aside header img#movie1{
+	float: right;
+}
+
+aside header img#movie2{
+	float: right;
+}
+
+aside header img#movie3{
+	float: right;
+}
+
+aside header img#movie4{
+	float: right;
+}
+
+
+aside {
+  display: table-cell;
+  background:       url(../images/background1.jpg) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+aside #com{
+	text-align:center;
+	
+}
+
+footer {
+  background-color: #C0C0C0;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  font-size:        90%;
+}
+
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
+
+h2 { font-size: 110%; }
+
+.slogan { 
+	color: #954b4b; 
+}
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}
+
+/* ALL BELOW IS NEW FOR BLOG */
+
+
+/* BELOW a above to override for nav */
+nav ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+
+	/* optional! very hard to see although does help */
+	text-shadow: 1px 1px 3px #e2c2c2; 
+
+	/* try this and see if you like it */
+	text-transform: uppercase;
+}
+
+li.selected {
+	background-color: #4682B4;
+}
+
+article span {
+	font-style: italic;
+}
